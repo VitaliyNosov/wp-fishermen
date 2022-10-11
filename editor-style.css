@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Larsseit';
+    src: url('assets/fonts/Larseit/Larsseit.eot');
+    src: local('Larsseit'),
+    url('assets/fonts/Larseit/Larsseit.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/Larseit/Larsseit.woff2') format('woff2'),
+    url('assets/fonts/Larseit/Larsseit.woff') format('woff'),
+    url('assets/fonts/Larseit/Larsseit.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Larsseit';
+    src: url('assets/fonts/Larseit/Larsseit-Italic.eot');
+    src: local('Larsseit Italic'), local('Larsseit-Italic'),
+        url('assets/fonts/Larseit/Larsseit-Italic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Larseit/Larsseit-Italic.woff2') format('woff2'),
+        url('assets/fonts/Larseit/Larsseit-Italic.woff') format('woff'),
+        url('assets/fonts/Larseit/Larsseit-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Larsseit';
+    src: url('assets/fonts/Larseit/Larsseit-Medium.eot');
+    src: local('Larsseit Medium'), local('Larsseit-Medium'),
+        url('assets/fonts/Larseit/Larsseit-Medium.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Larseit/Larsseit-Medium.woff2') format('woff2'),
+        url('assets/fonts/Larseit/Larsseit-Medium.woff') format('woff'),
+        url('assets/fonts/Larseit/Larsseit-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Larsseit';
+    src: url('assets/fonts/Larseit/Larsseit-MediumItalic.eot');
+    src: local('Larsseit Medium Italic'), local('Larsseit-MediumItalic'),
+    url('assets/fonts/Larseit/Larsseit-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/Larseit/Larsseit-MediumItalic.woff2') format('woff2'),
+    url('assets/fonts/Larseit/Larsseit-MediumItalic.woff') format('woff'),
+    url('assets/fonts/Larseit/Larsseit-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Larsseit';
+    src: url('assets/fonts/Larseit/Larsseit-Bold.eot');
+    src: local('Larsseit Bold'), local('Larsseit-Bold'),
+        url('assets/fonts/Larseit/Larsseit-Bold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Larseit/Larsseit-Bold.woff2') format('woff2'),
+        url('assets/fonts/Larseit/Larsseit-Bold.woff') format('woff'),
+        url('assets/fonts/Larseit/Larsseit-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+body#tinymce.wp-editor {
+  max-width: calc(784px + 16px) !important;
+  margin: 0 auto !important;
+  padding: 8px !important;
+
+  font: 20px Larsseit, Arial, Sans-Serif;
+  line-height: 200%;
+  font-weight: 400; 
+  -webkit-font-smoothing: antialiased; 
+  -webkit-overflow-scrolling: touch;
+  letter-spacing: -0.25px;
+}
+
+body#tinymce.wp-editor p {
+  padding-top: 0;
+  padding-bottom: 40px;
+  margin: 0;
+}
+
+body#tinymce.wp-editor ul, 
+body#tinymce.wp-editor ol {
+  padding: 0 0 40px 24px;
+}
+
+body#tinymce.wp-editor p + ul,
+body#tinymce.wp-editor p + ol {
+  margin-top: -40px;
+}

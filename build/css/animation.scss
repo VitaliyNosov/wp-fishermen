@@ -1,0 +1,61 @@
+@keyframes cursorClick {
+  0% {
+    width: 18px;
+    height: 18px;
+  }
+
+  50% {
+    width: 6px;
+    height: 6px;
+  }
+
+  100% {
+    width: 24px;
+    height: 24px;
+  }
+}
+#cursor {
+  pointer-events: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  visibility: hidden;
+  z-index: 99999;
+}
+#cursor.move {
+  visibility: visible;
+}
+
+.cursor-shape {
+  border: 2px solid #fff;
+  z-index: 9999;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+  box-shadow: 0px 10px 14px rgba(0, 0, 0, 0.15);
+  background: rgba($color: #000000, $alpha: 0.5);
+}
+#cursor.hover .cursor-shape {
+  width: 12px;
+  height: 12px;
+  transition: all 0.3s ease;
+}
+#cursor.click .cursor-shape {
+  animation: cursorClick 0.3s ease;
+}
+
+#cursor[data-onbg="bg-white"] .cursor-shape {
+  border-color: #000;
+  background: rgba($color: #fff, $alpha: 0.5);
+}
+
+.services-cards-loop-item {
+  opacity: 0;
+  will-change: transform;
+}

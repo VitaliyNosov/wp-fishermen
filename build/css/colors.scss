@@ -1,0 +1,30 @@
+/**
+ * Blue : #71A8B8
+ * Bright Green : #B6DAB4
+ * Purple : #7E2CFF
+ * Salmon : #FA7268
+ */
+
+[data-color-for-elements="blue"] .colored-element,
+[data-color-for-elements="blue"] .colored-element a,
+[data-color-for-elements="blue"] .features-text .features-text-nums li:before {
+    color: #71A8B8;
+}
+
+[data-color-for-elements="bright_green"] .colored-element,
+[data-color-for-elements="bright_green"] .colored-element a,
+[data-color-for-elements="bright_green"] .features-text .features-text-nums li:before {
+    color: #B6DAB4;
+}
+
+[data-color-for-elements="purple"] .colored-element,
+[data-color-for-elements="purple"] .colored-element a,
+[data-color-for-elements="purple"] .features-text .features-text-nums li:before {
+    color: #7E2CFF;
+}
+
+[data-color-for-elements="salmon"] .colored-element,
+[data-color-for-elements="salmon"] .colored-element a,
+[data-color-for-elements="salmon"] .features-text .features-text-nums li:before {
+    color: #FA7268;
+}

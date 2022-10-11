@@ -1,0 +1,172 @@
+.maker-name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 175%;
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+}
+.makers-page.mobile .maker-name {
+    font-size: 18px;
+    line-height: 133%;
+    letter-spacing: normal;
+}
+.maker-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: -0.25px;
+}
+.makers-page.mobile .maker-text {
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: normal;
+}
+  
+@media only screen and (max-width: 1024px) {
+}
+@media only screen and (max-width: 600px) {
+    .maker-name,
+    .makers-page.mobile .maker-name {
+        font-size: 18px;
+        line-height: 133%;
+        letter-spacing: normal;
+    }
+    .maker-text,
+    .makers-page.mobile .maker-text {
+        font-size: 14px;
+        line-height: 171%;
+        letter-spacing: normal;
+    }
+}
+
+
+.makers-page {
+    position: relative;
+    width: 1200px;
+    margin: 48px auto;
+    border: 6px solid salmon;
+    box-sizing: border-box;
+}
+.makers-page.wide {
+    width: 1200px;
+}
+.makers-page.tablet {
+    width: 1024px;
+}
+.makers-page.mobile {
+    width: 600px;
+}
+
+.maker {
+    position: absolute;
+}
+.maker-layout {
+    position: relative;
+}
+.maker-thumb {
+    position: relative;
+}
+.maker-thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.maker-desc {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    background: #fff;
+    transform: translate(-100%, -50%);
+    padding: 0 16px 0 0;
+}
+
+.maker[data-text-position="right"] .maker-desc {
+    left: auto;
+    right: 0;
+    transform: translate(100%, -50%);
+    padding: 0 0 0 16px;
+}
+
+
+.maker-action {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.maker-action button {
+    margin: 4px !important;
+    font-size: 24px !important;
+    font-weight: bold !important;
+    line-height: 1px !important;
+    height: auto !important;
+    min-height: 1px !important;
+    padding: 16px 12px !important;
+}
+
+
+/**
+ * Settings Styling
+ */
+.makers-actions {
+    position: sticky;
+    top: 36px;
+    left: 0;
+    background: #fff;
+    padding: 8px;
+    border: 1px solid #c7c7c7;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 9900;
+}
+
+.makers-form {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+}
+
+#makers-get-positions {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+
+.makers-actions p.submit {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.makers-tabs-switch,
+.makers-tabs-buttons {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: center;
+}
+.makers-tabs-input {
+    margin: 0 16px 0 0;
+}
+.makers-tabs-input input {
+    text-align: center;
+}
+.makers-tabs-switch button {
+    margin: 0 4px !important;
+}
+
+.makers-actions .form-table {
+    display: none;
+}
+.makers-actions .form-table input {
+    width: 400px;
+}
+
+
+
+
